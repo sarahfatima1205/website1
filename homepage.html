@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>    
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="styles.css">
+  <style>
     
     body {
       margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+      
     }
 
     .navigation {
@@ -26,17 +31,63 @@
       color: black;
     }
 
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      justify-content: center;
+      margin: 20px;
+    }
+
+    .product {
+        text-align: center;
+        margin: 10px;
+      }
+      
+    .product img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+      }
+
+    .buynowbutton {
+      display: block;
+      background-color: rgb(82, 0, 247);
+      color: white;
+      padding: 15px;
+      margin: 0;
+      width: 100%;
+      border-radius: 25px;
+      margin-top: 10px;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      text-decoration: none;
+    }
+
+    .buynowbutton:hover {
+      background-color: #4200f0;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      text-decoration: none;
+
+
+    }
+
+    
+
   </style>
   <title>Grocers</title>
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
-<body >
+<body>
+
+
   <div class="navigation">
-    <a href="homepage.html">Home</a>
-    <a href="try.html">Best Deals</a>
-    <a href=" ">Cart</a>
-    <a href="contact-us.html">Contact us!</a>
+    <a href="homepage.html">HOME</a>
+    <a href="try.html">BEST DEALS</a>
+    <a href=" ">CART</a>
+    <a href="contact-us.html">CONTACT US!</a>
+    
   </div>
+
 <img src="images/bg.jpg" alt="bg img" width="100%">
 <p></p>
 <div>
