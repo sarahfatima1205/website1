@@ -4,52 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <style>
-    body{
-      margin:0;
+    body {
+      margin: 0;
+    }
 
-            }
-
-    .navigation{
-        background-color:#333;  
-         text-align:center; 
-      }
-  
-      .navigation a{ 
-        color:white; 
-        display:inline-block; 
-        padding:24px 106px; 
-
-      }
-  
-      .navigation a:hover{
-        background-color: #82f9ff; 
-        color: black;
-
-      }
-
-
-    .product{
-      width: 30%;
-      margin: 10px;
+    .navigation {
+      background-color: #333;
       text-align: center;
     }
 
+    .navigation a {
+      color: white;
+      display: inline-block;
+      padding: 24px 20px;
+    }
 
+    .navigation a:hover {
+      background-color: #82f9ff;
+      color: black;
+    }
 
-    .buynowbutton{
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      justify-content: center;
+      margin: 20px;
+    }
+
+    .product {
+        text-align: center;
+        margin: 10px;
+      }
+      
+    .product img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+      }
+
+    .buynowbutton {
       display: block;
       background-color: rgb(82, 0, 247);
       color: white;
-      padding:15px;      
-      margin:0px;
-      width:500px;
-      border-radius:25px;
-
-    
+      padding: 15px;
+      margin: 0;
+      width: 100%;
+      border-radius: 25px;
+      margin-top: 10px;
     }
 
-    .buynowbutton:hover{
+    .buynowbutton:hover {
       background-color: #4200f0;
+    }
+
+    table {
+      font: bold;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: rgb(255, 255, 255);
+      background-color: rgb(104, 104, 104);
+      text-align: center;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    table th, table td {
+      padding: 10px;
+    }
+
+    table th {
+      background-color: #9f0055;
     }
   </style>
   <title>Grocers</title>
@@ -63,78 +87,80 @@
     <a href="contact-us.html">Contact us!</a>
     
   </div>
- 
+
+  <div class="grid-container">
     <div class="product">
-      <a href=""><img src="images/apples.jpg" alt="apples" height="500px"></a>
+      <a href=""><img src="images/apples.jpg" alt="apples" height=50%></a>
       <a href="#">
-        <button class="buynowbutton"><pre><del>Rs 220</del>     Rs200     Buy Now</pre></button>
+        <button class="buynowbutton"><pre><del>Rs 220</del>     Rs 200     Buy Now</pre></button>
       </a>
     </div>
     <div class="product">
-       <a href=""><img src="images/pears.jpg" alt="pears" height="500px"></a>
-         <a href="">
-         <button class="buynowbutton"><pre><del>Rs 275</del>     Rs250     Buy Now</pre></button>
-      </a>
-      </div>
-    <div class="product">
-        <a href=""><img src="images/grapes.jpeg" alt="grapes" height="500px"></a>
-        <a href="">
-          <button class="buynowbutton"><pre><del>Rs 210</del>     Rs180     Buy Now</pre></button>
-        </a>
-    </div>
-      <div class="product">
-       <a href=""><img src="images/kiwi.jpeg" alt="kiwi" height="500px"></a>
-      <a href="">
-        <button class="buynowbutton"><pre><del>Rs 550</del>     Rs500     Buy Now</pre></button>
+      <a href=""><img src="images/pears.jpg" alt="pears" height="450px"></a>
+      <a href="#">
+        <button class="buynowbutton"><pre><del>Rs 275</del>     Rs 250     Buy Now</pre></button>
       </a>
     </div>
     <div class="product">
-      <a href=""><img src="images/pineapple.jpg" alt="pineapple" height="500px"></a>
-      <a href="">
-        <button class="buynowbutton"><pre><del>Rs 135</del>     Rs120     Buy Now</pre></button>
-      </a>
-    </div>
-    <div class="product">
-      <a href=""><img src="images/mango.jpeg" alt="mango" height="500px"></a>
-      <a href="">
-        <button class="buynowbutton"><pre><del>Rs 122</del>     Rs80     Buy Now</pre></button>
-      </a>
-    </div>
-       <div class="product">
-          <a href=""><img src="images/cherry.jpeg" alt="cherry"height="500px"></a>
+        <a href=""><img src="images/lemon.jpeg" alt="lemon" height="450px"></a>
         <a href="#">
-        <button class="buynowbutton"><pre><del>Rs 282</del>     Rs250     Buy Now</pre></button>
-                      </a>
-    </div>
-      <table style="font:bold;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:rgb(255, 255, 255); background-color:rgb(104, 104, 104); text-align:center" width="100%" >
-         <tr style="background-color:#9f0055">
-             <th>Fruit</th>
-             <th>Price/kg</th>
-        </tr>
-        <tr>
-            <td>Apples</td>
-            <td>200</td>
-        <tr>
-            <td>Pears</td>
-            <td>250</td>
-        <tr>
-             <td>Grapes</td>
-            <td>180</td>
-        <tr>
-            <td>Kiwi</td>
-            <td>500</td>
-        <tr>
-                <td>Pineapple</td>
-                <td>120</td>
-        <tr>
-                 <td>Mango</td>
-                 <td>80</td>
-        <tr>
-            <td>Cherry</td>
-            <td>250</td>
-        </tr>
-        
-</table>
+          <button class="buynowbutton"><pre><del>Rs 220</del>     Rs 200     Buy Now</pre></button>
+        </a>
+      </div>
+      <div class="product">
+        <a href=""><img src="images/grapes.jpeg" alt="grapes" height="450px"></a>
+        <a href="#">
+          <button class="buynowbutton"><pre><del>Rs 275</del>     Rs 250     Buy Now</pre></button>
+        </a>
+      </div>
+      <div class="product">
+        <a href=""><img src="images/pineapple.jpg" alt="pineapple" height="450px"></a>
+        <a href="#">
+          <button class="buynowbutton"><pre><del>Rs 220</del>     Rs 200     Buy Now</pre></button>
+        </a>
+      </div>
+      <div class="product">
+        <a href=""><img src="images/mango.jpeg" alt="mango" height="450px"></a>
+        <a href="#">
+          <button class="buynowbutton"><pre><del>Rs 275</del>     Rs 250     Buy Now</pre></button>
+        </a>
+      </div>
+      <div class="product">
+        <a href=""><img src="images/strawberry.jpeg" alt="strawberry" height="450px"></a>
+        <a href="#">
+          <button class="buynowbutton"><pre><del>Rs 220</del>     Rs 200     Buy Now</pre></button>
+        </a>
+      </div>
+      <div class="product">
+        <a href=""><img src="images/kiwi.jpeg" alt="kiwi" height="450px"></a>
+        <a href="#">
+          <button class="buynowbutton"><pre><del>Rs 275</del>     Rs 250     Buy Now</pre></button>
+        </a>
+      </div>
+      <div class="product">
+        <a href=""><img src="images/cherry.jpeg" alt="cherry" height="450px"></a>
+        <a href="#">
+          <button class="buynowbutton"><pre><del>Rs 220</del>     Rs 200     Buy Now</pre></button>
+        </a>
+      </div>
+      <div class="product">
+        <a href=""><img src="images/guava.jpg" alt="guava" height="450px"></a>
+        <a href="#">
+          <button class="buynowbutton"><pre><del>Rs 275</del>     Rs 250     Buy Now</pre></button>
+        </a>
+      </div>
+      <div class="product">
+        <a href=""><img src="images/grapes.jpeg" alt="grapes" height="450px"></a>
+        <a href="#">
+          <button class="buynowbutton"><pre><del>Rs 220</del>     Rs 200     Buy Now</pre></button>
+        </a>
+      </div>
+      <div class="product">
+        <a href=""><img src="images/banana.jpeg" alt="banana" height="450px"></a>
+        <a href="#">
+          <button class="buynowbutton"><pre><del>Rs 275</del>     Rs 250     Buy Now</pre></button>
+        </a>
+      </div>
+  </div>
 </body>
 </html>
-
